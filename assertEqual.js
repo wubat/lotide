@@ -1,13 +1,13 @@
-const args = process.argv.slice(2) 
-const expectedArg = args[0]
-const actualArg = args[1]
+// const args = process.argv.slice(2) 
+// const expectedArg = args[0]
+// const actualArg = args[1]
 
-const assertEqual = function(expectedArg, actualArg) {
-  if (args[0] === args[1]) {
-    console.log( `💚💚💚 Assertion Passed: ${expectedArg} === ${actualArg}`)
+const assertEqual = function(expected, actual) {
+  if (expected === actual) {
+    console.log( `💚💚💚 Assertion Passed: ${expected} === ${actual}`)
   }
   else {
-    console.log(`💔💔💔 Assertion Failed: ${expectedArg} !== ${actualArg}`)
+    console.log(`💔💔💔 Assertion Failed: ${expected} !== ${actual}`)
   }
 };
 
