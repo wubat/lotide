@@ -1,26 +1,15 @@
-const args = process.argv.slice(2) 
-const expectedArg = args[0]
-const actualArg = args[1]
-
-const assertEqual = function(expectedArg, actualArg) {
-  if (args[0] === args[1]) {
-
-    console.log( `💚💚💚 Assertion Passed: ${expectedArg} === ${actualArg}`)
+const eqArrays = function(array1, array2) {
+  if (array1.length !== array2.length) {
+    return false;
   }
-  else {
-    console.log(`💔💔💔 Assertion Failed: ${expectedArg} !== ${actualArg}`)
+
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
   }
+  return true;
 };
 
-function eqArrays(arr1, arr2) {
-  if (arr1 === arr2) {
-    return true
-  }
-  else {
-    return false
-  }
-}
 
-
-
-module.exports = eqArrays 
+module.exports = eqArrays; 
