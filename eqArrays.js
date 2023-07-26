@@ -21,6 +21,6 @@ function eqArrays(arr1, arr2) {
   }
 }
 
-console.log([1] === [1])
-assertEqual(eqArrays([1, 1, 1], [2, 1, 1]), false)
-assertEqual(eqArrays([1, 1, 1], [1, 1, 1]), true)
+
+
+module.exports = eqArrays 
