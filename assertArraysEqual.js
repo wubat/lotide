@@ -22,5 +22,4 @@ function assertArraysEqual(arr1, arr2) {
   }
 }
 
-assertArraysEqual([1, 1, 1], [1, 1, 1])
-assertArraysEqual([2, 2, 2], [2, 2, 3])
+module.exports = assertArraysEqual
