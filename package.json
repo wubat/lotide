@@ -1,6 +1,6 @@
 {
   "name": "@wubat/lotide",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "mini clone of lodash librar",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/wubat/lotide.git"
   },
-  "author": "james @james.com",
+  "author": "wubat <jameswu000@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wubat/lotide/issues"
